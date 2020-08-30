@@ -1,0 +1,54 @@
+children: <Widget>[
+          DrawerHeader(
+            child: Text('You can do this!'),
+            decoration: BoxDecoration(color: Colors.deepPurpleAccent[300]),
+          ),
+          ListTile(
+            title: Text('Home'),
+            onTap: () {
+              Navigator.of(context).pushReplacementNamed('/');
+            },
+          ),
+          ListTile(
+            title: Text('My Diary'),
+            onTap: () {
+              Navigator.of(context).pushReplacementNamed(MyDiary.routeName);
+            },
+          ),
+          ListTile(
+            title: Text('#Qotd'),
+            onTap: () {
+              Navigator.of(context).pushReplacementNamed(MyQuotes.routeName);
+            },
+          ),
+          ListTile(
+            title: Text('#mood'),
+            onTap: () {
+              Navigator.of(context).pushReplacementNamed(Mymoods.routeName);
+            },
+          ),
+          ListTile(
+            title: Text('My Doctor'),
+            onTap: () {
+              Navigator.of(context).pushReplacementNamed(ContactDr.routeName);
+            },
+          ),
+          ListTile(
+            title: Text('Chat'),
+            onTap: () {
+              Navigator.of(context).pushReplacementNamed(MyChat.routeName);
+            },
+          ),
+          ListTile(
+            title: Text('Meds'),
+            onTap: () {
+              Navigator.of(context).pushReplacementNamed(MyMeds.routeName);
+            },
+          ),
+          ListTile(
+            title: Text('Settings'),
+            onTap: () {
+              Navigator.of(context).pushReplacementNamed(Settings.routeName);
+            },
+          ),
+        ],
