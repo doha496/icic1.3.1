@@ -20,7 +20,7 @@ class MyDrawer extends StatelessWidget {
           _draweritems(
               icon: Icons.home,
               text: 'Home',
-              onTap: () => Navigator.of(context).pushNamed('/')),
+              onTap: () => Navigator.of(context).pushReplacementNamed('/')),
           _draweritems(
               icon: Icons.person,
               text: 'My Profile',
@@ -29,7 +29,7 @@ class MyDrawer extends StatelessWidget {
           // _draweritems(
           //     icon: Icons.book,
           //     text: 'My Diary',
-          //     onTap: () => Navigator.of(context).pushNamed(MyDiary.routeName)),
+          //     onTap: () => Navigator.of(context).pushReplacementNamed(MyDiary.routeName)),
           _draweritems(
               icon: Icons.list,
               text: 'My Log',
@@ -38,28 +38,33 @@ class MyDrawer extends StatelessWidget {
           _draweritems(
               icon: Icons.mood,
               text: '#mood',
-              onTap: () => Navigator.of(context).pushNamed(Mymoods.routeName)),
+              onTap: () => Navigator.of(context)
+                  .pushReplacementNamed(Mymoods.routeName)),
           _draweritems(
               icon: Icons.healing,
               text: 'Meds',
-              onTap: () => Navigator.of(context).pushNamed(MyMeds.routeName)),
+              onTap: () =>
+                  Navigator.of(context).pushReplacementNamed(MyMeds.routeName)),
           _draweritems(
               icon: Icons.bookmark,
               text: '#QUOTD',
-              onTap: () => Navigator.of(context).pushNamed(MyQuotes.routeName)),
+              onTap: () => Navigator.of(context)
+                  .pushReplacementNamed(MyQuotes.routeName)),
           _draweritems(
               icon: Icons.contacts,
               text: 'Contact Doctor',
-              onTap: () =>
-                  Navigator.of(context).pushNamed(ContactDr.routeName)),
+              onTap: () => Navigator.of(context)
+                  .pushReplacementNamed(ContactDr.routeName)),
           _draweritems(
               icon: Icons.chat_bubble,
               text: 'Chat',
-              onTap: () => Navigator.of(context).pushNamed(MyChat.routeName)),
+              onTap: () =>
+                  Navigator.of(context).pushReplacementNamed(MyChat.routeName)),
           _draweritems(
               icon: Icons.settings,
               text: 'Settings',
-              onTap: () => Navigator.of(context).pushNamed(Settings.routeName)),
+              onTap: () => Navigator.of(context)
+                  .pushReplacementNamed(Settings.routeName)),
           Divider(),
           ListTile(title: Text('ICIW ©2020, All Rights Reserved'))
         ],
