@@ -12,8 +12,16 @@ class Mylogs extends StatelessWidget {
         title: Text('ICIW > Logs'),
         backgroundColor: Color.fromRGBO(124, 67, 75, 1),
       ),
-      // body: ListView.builder(itemBuilder: null),
       drawer: MyDrawer(),
+      bottomNavigationBar: BottomAppBar(
+        child: Text(
+          'ICIW ©2020, All Rights Reserved',
+          textAlign: TextAlign.center,
+          style: TextStyle(
+              fontSize: 15, fontWeight: FontWeight.bold, color: Colors.black),
+        ),
+        color: Color.fromRGBO(124, 67, 75, 1),
+      ),
     );
   }
 }

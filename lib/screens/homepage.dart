@@ -36,14 +36,14 @@ class MYHomepage extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: <Widget>[
-                HomeOpt('My Profile', MyBio.routeName),
+                // HomeOpt('My Profile', MyBio.routeName),
                 HomeOpt('My Log', Mylogs.routeName),
               ],
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: <Widget>[
-                // HomeOpt('My Diary', MyDiary.routeName),
+                HomeOpt('My Diary', MyDiary.routeName),
                 HomeOpt('#QOUTD', MyQuotes.routeName),
               ],
             ),
@@ -67,14 +67,16 @@ class MYHomepage extends StatelessWidget {
                   HomeOpt('Settings', Settings.routeName),
                 ]),
           ]),
-      // bottomSheet: new Footer(
-      //     child: Padding(
-      //   padding: new EdgeInsets.all(7),
-      //   child: Text('ICIW ©2020, All Rights Reserved.'),
-      // )),
-      // debugShowCheckedModeBanner: false
+      bottomNavigationBar: BottomAppBar(
+        child: Text(
+          'ICIW ©2020, All Rights Reserved',
+          textAlign: TextAlign.center,
+          style: TextStyle(
+              fontSize: 15, fontWeight: FontWeight.bold, color: Colors.black),
+        ),
+        color: Color.fromRGBO(124, 67, 75, 1),
+      ),
     );
-    // );
   }
 }
 

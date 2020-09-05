@@ -13,14 +13,16 @@ class ContactDr extends StatelessWidget {
         title: Text('ICIW > Doctor\'s Profile'),
         backgroundColor: Color.fromRGBO(124, 67, 75, 1),
       ),
-      // body: ListView.builder(itemBuilder: null),
       drawer: MyDrawer(),
-      // bottomSheet: new Footer(
-      //     child: Padding(
-      //   padding: new EdgeInsets.all(10),
-      //   child: Text('ICIW ©2020, All Rights Reserved.'),
-      // )),
-      // backgroundColor: Colors.purple[50],
+      bottomNavigationBar: BottomAppBar(
+        child: Text(
+          'ICIW ©2020, All Rights Reserved',
+          textAlign: TextAlign.center,
+          style: TextStyle(
+              fontSize: 15, fontWeight: FontWeight.bold, color: Colors.black),
+        ),
+        color: Color.fromRGBO(124, 67, 75, 1),
+      ),
     );
   }
 }
