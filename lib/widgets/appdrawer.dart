@@ -21,10 +21,10 @@ class MyDrawer extends StatelessWidget {
               icon: Icons.home,
               text: 'Home',
               onTap: () => Navigator.of(context).pushNamed('/')),
-          // _draweritems(
-          //     icon: Icons.person,
-          //     text: 'My Profile',
-          //     onTap: () => Navigator.of(context).pushNamed(MyBio.routeName)),
+          _draweritems(
+              icon: Icons.person,
+              text: 'My Profile',
+              onTap: () => Navigator.of(context).pushNamed(MyBio.routeName)),
           _draweritems(
               icon: Icons.book,
               text: 'My Diary',
@@ -57,7 +57,12 @@ class MyDrawer extends StatelessWidget {
           _draweritems(
               icon: Icons.settings,
               text: 'Settings',
-              onTap: () => Navigator.of(context).pushNamed(Settings.routeName)),
+              onTap: () => Navigator.of(context).pushNamed(SettingS.routeName)),
+          // _draweritems(
+          //   icon: Icons.arrow_back_ios,
+          //   text: 'Log Out',
+          //   // onTap: () => Navigator.of(context).pushNamed(LogOut.routeName)
+          // ),
           Divider(),
           ListTile(title: Text('ICIW ©2020, All Rights Reserved'))
         ],

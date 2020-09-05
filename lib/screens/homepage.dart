@@ -36,7 +36,7 @@ class MYHomepage extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: <Widget>[
-                // HomeOpt('My Profile', MyBio.routeName),
+                HomeOpt('My Profile', MyBio.routeName),
                 HomeOpt('My Log', Mylogs.routeName),
               ],
             ),
@@ -64,7 +64,7 @@ class MYHomepage extends StatelessWidget {
             Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: <Widget>[
-                  HomeOpt('Settings', Settings.routeName),
+                  HomeOpt('Settings', SettingS.routeName),
                 ]),
           ]),
       bottomNavigationBar: BottomAppBar(

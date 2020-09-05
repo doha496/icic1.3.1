@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "304150456418",
+    "firebase_url": "https://iciw1-4.firebaseio.com",
+    "project_id": "iciw1-4",
+    "storage_bucket": "iciw1-4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:304150456418:android:0499b9824cd754ab42093b",
+        "android_client_info": {
+          "package_name": "com.example.iciw1_4"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "304150456418-e9u15uuc4kb8nntk81tn5l4cqckf8ej0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzIsO-0O75p4QA68fzqNjoL94tZOwWkv0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "304150456418-e9u15uuc4kb8nntk81tn5l4cqckf8ej0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

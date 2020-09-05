@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:footer/footer.dart';
+// import 'package:footer/footer.dart';
 import 'package:provider/provider.dart';
 import '../providers/diarylist.dart';
 import '../widgets/appdrawer.dart';

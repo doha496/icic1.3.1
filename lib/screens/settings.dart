@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../widgets/appdrawer.dart';
 
-class Settings extends StatelessWidget {
+class SettingS extends StatelessWidget {
   static const routeName = '/settings';
 
   @override
