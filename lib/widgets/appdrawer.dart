@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:iciw1_4/screens/login.dart';
 import '../screens/biopage.dart';
 import '../screens/mylogs.dart';
 import '../screens/meds.dart';
@@ -58,13 +59,15 @@ class MyDrawer extends StatelessWidget {
               icon: Icons.settings,
               text: 'Settings',
               onTap: () => Navigator.of(context).pushNamed(SettingS.routeName)),
-          // _draweritems(
-          //   icon: Icons.arrow_back_ios,
-          //   text: 'Log Out',
-          //   // onTap: () => Navigator.of(context).pushNamed(LogOut.routeName)
-          // ),
+          _draweritems(
+              icon: Icons.arrow_back_ios,
+              text: 'Log Out',
+              onTap: () =>
+                  Navigator.of(context).pushNamed(LoginPage.routeName)),
           Divider(),
-          ListTile(title: Text('ICIW ©2020, All Rights Reserved'))
+          ListTile(
+              title: Text('ICIW ©2020, All Rights Reserved',
+                  style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold)))
         ],
       ),
     );
@@ -96,7 +99,10 @@ class MyDrawer extends StatelessWidget {
       title: Row(
         children: <Widget>[
           Icon(icon),
-          Padding(padding: EdgeInsets.all(8.0), child: Text(text))
+          Padding(
+              padding: EdgeInsets.all(8.0),
+              child: Text(text,
+                  style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold)))
         ],
       ),
       onTap: onTap,

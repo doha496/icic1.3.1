@@ -8,6 +8,7 @@ class MyChat extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color.fromRGBO(250, 234, 255, 1),
       appBar: AppBar(
         centerTitle: true,
         title: Text('ICIW > Chat'),

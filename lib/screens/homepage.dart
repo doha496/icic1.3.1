@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-import '../screens/add_diary.dart';
-import '../screens/biopage.dart';
-import '../screens/chat.dart';
-import '../screens/contact_dr.dart';
-import '../screens/meds.dart';
-import '../screens/mood.dart';
-import '../screens/mylogs.dart';
-import '../screens/quotd.dart';
-import '../screens/settings.dart';
-// import 'package:footer/footer.dart';
+import 'package:iciw1_4/providers/bgimg.dart';
+import 'add_diary.dart';
+import 'biopage.dart';
+import 'chat.dart';
+import 'contact_dr.dart';
+import 'meds.dart';
+import 'mood.dart';
+import 'mylogs.dart';
+import 'quotd.dart';
+import 'settings.dart';
 import '../widgets/appdrawer.dart';
 
 class MYHomepage extends StatelessWidget {
@@ -17,7 +17,7 @@ class MYHomepage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.transparent,
+      backgroundColor: Color.fromRGBO(250, 234, 255, 1),
       appBar: AppBar(
         centerTitle: true,
         title: Text('ICIW'),
@@ -28,11 +28,11 @@ class MYHomepage extends StatelessWidget {
       body: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: <Widget>[
-            Container(
-                decoration: BoxDecoration(
-                    image: DecorationImage(
-                        image: AssetImage('assets/stars.jpeg'),
-                        fit: BoxFit.cover))),
+            // Container(
+            //     decoration: BoxDecoration(
+            //         image: DecorationImage(
+            //             image: BGimage(),
+            // fit: BoxFit.cover))),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: <Widget>[
