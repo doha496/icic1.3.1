@@ -1,6 +1,6 @@
 /// CSC422 course project
 /// ICIW
-/// Version: 1.4.3
+/// Version: 1.5
 /// Author: Dpha Tariq - 2015/13243
 /// Date: Aug-Sep, 2020
 

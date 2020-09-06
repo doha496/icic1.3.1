@@ -29,7 +29,7 @@ class Mymoods extends StatelessWidget {
                     )),
               ),
               Icon(
-                Icons.calendar_today,
+                Icons.tag_faces,
                 color: Color.fromRGBO(124, 67, 75, 1),
               ),
             ],
@@ -47,7 +47,7 @@ class Mymoods extends StatelessWidget {
                     )),
               ),
               Icon(
-                Icons.calendar_today,
+                Icons.tag_faces,
                 color: Color.fromRGBO(124, 67, 75, 1),
               ),
             ],
@@ -65,7 +65,7 @@ class Mymoods extends StatelessWidget {
                     )),
               ),
               Icon(
-                Icons.calendar_today,
+                Icons.tag_faces,
                 color: Color.fromRGBO(124, 67, 75, 1),
               ),
             ],
@@ -83,7 +83,7 @@ class Mymoods extends StatelessWidget {
                     )),
               ),
               Icon(
-                Icons.calendar_today,
+                Icons.tag_faces,
                 color: Color.fromRGBO(124, 67, 75, 1),
               ),
             ],
@@ -101,7 +101,7 @@ class Mymoods extends StatelessWidget {
                     )),
               ),
               Icon(
-                Icons.calendar_today,
+                Icons.tag_faces,
                 color: Color.fromRGBO(124, 67, 75, 1),
               ),
             ],
@@ -119,7 +119,7 @@ class Mymoods extends StatelessWidget {
                     )),
               ),
               Icon(
-                Icons.calendar_today,
+                Icons.tag_faces,
                 color: Color.fromRGBO(124, 67, 75, 1),
               ),
             ],
@@ -137,7 +137,7 @@ class Mymoods extends StatelessWidget {
                     )),
               ),
               Icon(
-                Icons.calendar_today,
+                Icons.tag_faces,
                 color: Color.fromRGBO(124, 67, 75, 1),
               ),
             ],
@@ -155,7 +155,7 @@ class Mymoods extends StatelessWidget {
                     )),
               ),
               Icon(
-                Icons.calendar_today,
+                Icons.tag_faces,
                 color: Color.fromRGBO(124, 67, 75, 1),
               ),
             ],
@@ -173,7 +173,7 @@ class Mymoods extends StatelessWidget {
                     )),
               ),
               Icon(
-                Icons.calendar_today,
+                Icons.tag_faces,
                 color: Color.fromRGBO(124, 67, 75, 1),
               ),
             ],
@@ -192,7 +192,7 @@ class Mymoods extends StatelessWidget {
                     )),
               ),
               Icon(
-                Icons.calendar_today,
+                Icons.tag_faces,
                 color: Color.fromRGBO(124, 67, 75, 1),
               ),
             ],
@@ -210,7 +210,7 @@ class Mymoods extends StatelessWidget {
                     )),
               ),
               Icon(
-                Icons.calendar_today,
+                Icons.tag_faces,
                 color: Color.fromRGBO(124, 67, 75, 1),
               ),
             ],
