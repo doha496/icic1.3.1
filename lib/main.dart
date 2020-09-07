@@ -1,6 +1,6 @@
 /// CSC422 course project
 /// ICIW
-/// Version: 1.5
+/// Version: 1.5.1
 /// Author: Dpha Tariq - 2015/13243
 /// Date: Aug-Sep, 2020
 
@@ -30,25 +30,24 @@ Future<void> main() async {
 class ICIW_14 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return /*ChangeNotifierProvider<DiaryList>(
+    return ChangeNotifierProvider<DiaryList>(
         create: (context) => DiaryList(),
-        child: */
-        MaterialApp(
-      initialRoute: '/',
-      routes: {
-        '/': (ctx) => MYHomepage(),
-        MyBio.routeName: (ctx) => MyBio(),
-        MyDiary.routeName: (ctx) => MyDiary(),
-        MyChat.routeName: (ctx) => MyChat(),
-        Mymoods.routeName: (ctx) => Mymoods(),
-        MyQuotes.routeName: (ctx) => MyQuotes(),
-        ContactDr.routeName: (ctx) => ContactDr(),
-        MyMeds.routeName: (ctx) => MyMeds(),
-        SettingS.routeName: (ctx) => SettingS(),
-        Mylogs.routeName: (ctx) => Mylogs(),
-        LoginPage.routeName: (ctx) => LoginPage(),
-      },
-      debugShowCheckedModeBanner: false,
-    );
+        child: MaterialApp(
+          initialRoute: '/',
+          routes: {
+            '/': (ctx) => MYHomepage(),
+            MyBio.routeName: (ctx) => MyBio(),
+            MyDiary.routeName: (ctx) => MyDiary(),
+            MyChat.routeName: (ctx) => MyChat(),
+            Mymoods.routeName: (ctx) => Mymoods(),
+            MyQuotes.routeName: (ctx) => MyQuotes(),
+            ContactDr.routeName: (ctx) => ContactDr(),
+            MyMeds.routeName: (ctx) => MyMeds(),
+            SettingS.routeName: (ctx) => SettingS(),
+            Mylogs.routeName: (ctx) => Mylogs(),
+            LoginPage.routeName: (ctx) => LoginPage(),
+          },
+          debugShowCheckedModeBanner: false,
+        ));
   }
 }
