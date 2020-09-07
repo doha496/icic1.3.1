@@ -1,6 +1,16 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import '../providers/userinfo.dart';
 import '../widgets/appdrawer.dart';
+
+// final dummy = [
+//   {
+//     'name': 'Tamer',
+//     'mobile': '01018261436',
+//     'address': 'def456',
+//     'email': 'tamer@gmail.com',
+//   },
+// ];
 
 class ContactDr extends StatelessWidget {
   static const routeName = '/contactdr';
@@ -39,6 +49,7 @@ class AddForm extends StatefulWidget {
 }
 
 class _AddFormState extends State<AddForm> {
+  // Record users = Record.fromMap(dummy[0]);
   final _formKey = GlobalKey<FormState>();
 
   Map nameMap = {

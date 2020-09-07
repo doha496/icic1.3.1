@@ -3,6 +3,17 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import '../providers/userinfo.dart';
 import '../widgets/appdrawer.dart';
 
+// final dummy = [
+//   {
+//     'name': 'Daizy',
+//     'mobile': '01018261436',
+//     'address': 'abc123',
+//     'email': 'daizy@gmail.com',
+//     'dob': '10/04/1996',
+//     'gender': 'Female'
+//   },
+// ];
+
 class MyBio extends StatelessWidget {
   static const routeName = '/biopage';
 
@@ -15,9 +26,12 @@ class MyBio extends StatelessWidget {
         title: Text('ICIW > Profile'),
         backgroundColor: Color.fromRGBO(124, 67, 75, 1),
       ),
-      body: ListView(scrollDirection: Axis.vertical, children: <Widget>[
-        AddForm(),
-      ]),
+      body: ListView(
+          // addAutomaticKeepAlives: true,
+          scrollDirection: Axis.vertical,
+          children: <Widget>[
+            AddForm(),
+          ]),
       drawer: MyDrawer(),
       bottomNavigationBar: BottomAppBar(
         child: Text(
@@ -40,8 +54,9 @@ class AddForm extends StatefulWidget {
 }
 
 class _AddFormState extends State<AddForm> {
+  // Record users = Record.fromMap(dummy[0]);
   final _formKey = GlobalKey<FormState>();
-  Gender _gender = Gender.male;
+  Gender _gender = Gender.female;
   Map nameMap = {
     'name': '',
     'mobile': '',

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-// import 'login.dart';
+import 'login.dart';
 import 'signin.dart';
 
 class FirstScreen extends StatelessWidget {
@@ -21,13 +21,6 @@ class FirstScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             mainAxisSize: MainAxisSize.max,
             children: <Widget>[
-              // CircleAvatar(
-              //   backgroundImage: NetworkImage(
-              //     imageUrl,
-              //   ),
-              //   radius: 60,
-              //   backgroundColor: Colors.transparent,
-              // ),
               SizedBox(height: 40),
               Text(
                 'NAME',
@@ -59,26 +52,25 @@ class FirstScreen extends StatelessWidget {
                     fontWeight: FontWeight.bold),
               ),
               SizedBox(height: 40),
-              // RaisedButton(
-              //   onPressed: () {
-              //     signOutGoogle();
-              //     Navigator.of(context).pushAndRemoveUntil(
-              //         MaterialPageRoute(builder: (context) {
-              //       return LoginPage();
-              //     }), ModalRoute.withName('/'));
-              //   },
-              //   color: Colors.deepPurple,
-              //   child: Padding(
-              //     padding: const EdgeInsets.all(8.0),
-              //     child: Text(
-              //       'Sign Out',
-              //       style: TextStyle(fontSize: 25, color: Colors.white),
-              //     ),
-              //   ),
-              //   elevation: 5,
-              //   shape: RoundedRectangleBorder(
-              //       borderRadius: BorderRadius.circular(40)),
-              // )
+              RaisedButton(
+                onPressed: () {
+                  signOutGoogle();
+                  Navigator.of(context).pushAndRemoveUntil(
+                      MaterialPageRoute(builder: (context) {
+                    return LoginPage();
+                  }), ModalRoute.withName('/'));
+                },
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text(
+                    'Sign Out',
+                    style: TextStyle(fontSize: 25, color: Colors.white),
+                  ),
+                ),
+                elevation: 5,
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(40)),
+              )
             ],
           ),
         ),
